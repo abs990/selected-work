@@ -1,0 +1,59 @@
+{
+   "input_settings": {
+      "settings": {
+         "epoch_n": 2,
+         "image_size": 572,
+         "use_gpu": true
+      },
+      "model_params": {
+         "use_existing_model": false,
+         "existing_model_filename": "random.pt",
+         "final_model_filename": "final-models/experiment-unit-test.pt",
+         "experiment_info_filename": "experiment-info/experiment-unit-test-info.json",
+         "criterion": "CrossEntropyLoss",
+         "optimizer": {
+            "name": "Adam",
+            "lr": 1e-05,
+            "weight_decay": 0.0005
+         }
+      },
+      "dataset_params": {
+         "images_directory": "data/cells",
+         "train_test_split": 0.8,
+         "batch_size": 4,
+         "augment_data": false
+      }
+   },
+   "training": {
+      "0": {
+         "batch_loss": [
+            0.15553127229213715,
+            0.15545573830604553,
+            0.15334869921207428,
+            0.1523398905992508,
+            0.15154069662094116,
+            0.15029513835906982,
+            0.15045195817947388,
+            0.14882619678974152
+         ],
+         "epoch_loss": 0.16237194538116456,
+         "accuracy": 0.018221416994367096,
+         "eval_loss": 0.1762297973036766
+      },
+      "1": {
+         "batch_loss": [
+            0.1488141417503357,
+            0.14794684946537018,
+            0.14768214523792267,
+            0.14700761437416077,
+            0.14560376107692719,
+            0.14493663609027863,
+            0.14411011338233948,
+            0.14420224726200104
+         ],
+         "epoch_loss": 0.15604046781857808,
+         "accuracy": 0.7915069680624933,
+         "eval_loss": 0.17150717973709106
+      }
+   }
+}

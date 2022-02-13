@@ -1,0 +1,24 @@
+settings:
+  epoch_n: 10
+  image_size: 572
+  use_gpu: true
+
+model:
+  use_existing_model: false
+  existing_model_filename: 'some_file.pt'
+  final_model_filename: 'final-models/experiment-7.pt'
+  experiment_info_filename: 'experiment-info/experiment-7-info.json'
+  criterion: 'CrossEntropyLoss'
+  optimizer:
+    name: Adam
+    lr: 0.00001
+    weight_decay: 0.0005
+
+dataset:
+  images_directory: 'data/cells'
+  train_test_split: 0.8
+  batch_size: 4
+  augment_data: true
+
+
+
